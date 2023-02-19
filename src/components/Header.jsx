@@ -21,12 +21,12 @@ const StyledGreetingText = styled.div`
   }
 `;
 
-const Header = () => {
+const Header = ({ user }) => {
   return (
     <StyledHeader>
       <h3>Tasks</h3>
       <StyledGreetingText>
-        Hi <span>user</span>
+        Hi <span>{user}</span>
       </StyledGreetingText>
     </StyledHeader>
   );
