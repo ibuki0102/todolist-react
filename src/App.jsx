@@ -13,7 +13,6 @@ function App() {
           <Route path="*" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
-      <TodoPage />
     </div>
   );
 }
