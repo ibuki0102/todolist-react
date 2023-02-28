@@ -1,6 +1,7 @@
 {
   "name": "todolist-react",
   "version": "0.1.0",
+  "homepage": "https://ibuki0102.github.io/todolist-react/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
