@@ -1,12 +1,12 @@
 import './App.scss';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { HomePage, TodoPage, LoginPage, SignUpPage } from './pages';
 import { AuthProvider } from 'contexts/AuthContext';
 
 function App() {
   return (
     <div className="app">
-      <HashRouter>
+      <BrowserRouter>
         <AuthProvider>
           <Routes>
             <Route path="login" element={<LoginPage />} />
@@ -15,7 +15,7 @@ function App() {
             <Route path="*" element={<HomePage />} />
           </Routes>
         </AuthProvider>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
